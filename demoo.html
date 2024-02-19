@@ -1,0 +1,510 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/d47e1d2e79.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+
+
+    <title>demo</title>
+    <style>
+        .header {
+            font-weight: 900;
+            font-size: 60px;
+        }
+
+        .lead {
+            color: black;
+        }
+
+        .start {
+            height: calc(60% - 1vh);
+            width: 100%;
+            background-color: #DCDCDC;
+        }
+
+        .paragraph {
+            font-size: 22px;
+            text-align: justify;
+        }
+
+        .right-col {
+            padding-left: 12rem;
+        }
+
+        .left-col {
+            padding-right: 12rem;
+        }
+
+        .image {
+            height: 50px;
+            width: 50px;
+            border-radius: 25px;
+        }
+
+        .benifits-header {
+            margin-left: 2rem;
+        }
+
+        /* CSS */
+        .button-28 {
+            width: fit-content !important;
+            appearance: none;
+            background-color: transparent;
+            border: 2px solid #1A1A1A;
+            border-radius: 5px;
+            box-sizing: border-box;
+            color: #3B3B3B;
+            cursor: pointer;
+            display: inline-block;
+            font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            font-size: 16px;
+            font-weight: 600;
+            line-height: normal;
+            margin: 0;
+            min-height: 60px;
+            min-width: 0;
+            outline: none;
+            padding: 16px 24px;
+            text-align: center;
+            text-decoration: none;
+            transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            width: 100%;
+            will-change: transform;
+        }
+
+        .button-28:disabled {
+            pointer-events: none;
+        }
+
+        .button-28:hover {
+            color: #fff;
+            background-color: #1A1A1A;
+            box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+            transform: translateY(-2px);
+        }
+
+        .button-28:active {
+            box-shadow: none;
+            transform: translateY(0);
+        }
+
+        .fs-16 {
+            font-size: 1rem !important;
+        }
+
+        .fs-22 {
+            font-size: 1.375rem !important;
+        }
+
+        .sweet-icons {
+            height: 150px;
+            width: 150px;
+            border-radius: 100%;
+            background-color: whitesmoke;
+        }
+
+        @media only screen and (max-width: 767px) {
+            .start {
+                height: calc(60% - 1vh);
+                width: 100%;
+                background-color: #DCDCDC;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#portfolio" role="button" aria-expanded="false">
+                            Portfolio
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact-us">Contact US</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <section class="start section-1" id="home">
+        <div class="container" style="padding-top: 4.5rem!important;">
+            <div class="d-flex align-items-center justify-content-center pt-4">
+                <h1 class="header text-center">Start Your Carrer With <br />Moqups</h1><br />
+            </div>
+            <div class="d-flex justify-content-center mt-4">
+                <p class="text-muted">Entice job seeker to read on with a short <br />and catchy introduction to your
+                    company</p>
+            </div>
+            <div class="d-flex justify-content-center align-items-center mt-4">
+                <button class="btn btn-dark">VIEW JOB OPENINGS</button>
+            </div>
+        </div>
+    </section>
+    <section class="section-2" id="about">
+        <div class="container">
+            <div class="row mt-4">
+                <div class="col-12 col-lg-6 mt-4">
+                    <div class="">
+                        <h2 style="font-weight: 600;">Who Are We?</h2><br />
+                        <p class="paragraph">Here's where you can explain what your company does and who you serve.
+                            You might
+                            even include a
+                            short
+                            sentence about your mission and values.<br /><br />
+                            But don't forget to mention that your company is only as good as its dedicated and creative
+                            staff.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 mt-4">
+                    <div class=" ">
+                        <h2 style="font-weight: 600;">Where Are We?</h2><br />
+                        <p class="paragraph">Tell potential employees where you're located and why that's an asset. You
+                            may
+                            want
+                            to mention your
+                            home
+                            base, international offices, or distributed workforce.<br /><br />
+                            You might even highlight the vibrancy of your city, region and country.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-3" id="portfolio">
+        <div class="container mt-4">
+            <div class="row mt-4 d-flex align-items-center justify-content-center">
+                <h1 class="" style="font-weight: 800; font-size: 3.5rem;">Benifits & Perks</h1>
+                <p class="paragraph mt-4 text-muted">Celebrate your competitive benefit package that might
+                    include health
+                    and dental,
+                    family leave, paid vacation, and a 401k.</p>
+            </div>
+            <div class="row mt-4">
+                <div class="col-12 col-lg-6 mt-2">
+                    <div class="benefit-cards d-flex align-items-center">
+                        <img class="image" src="/home/define1/Desktop/image.jpg">
+
+                        <h1 class="benifits-header">Stability & Planning</h1>
+                    </div>
+                    <p class="text-muted paragraph" style="padding-left: 5rem;
+                    padding-top: 1rem;">Provide details about a key benefit, its impact, and
+                        the
+                        opportunities it offers.</p>
+                </div>
+                <div class="col-12 col-lg-6 mt-2">
+                    <div class="benefit-cards d-flex align-items-center">
+                        <img class="image" src="/home/define1/Desktop/image.jpg">
+
+                        <h1 class="benifits-header">Professional Growth</h1>
+                    </div>
+                    <p class="text-muted paragraph" style="padding-left: 5rem;
+                    padding-top: 1rem;">Provide details about a key benefit, its impact, and the opportunities it
+                        offers.</p>
+                </div>
+                <div class="col-12 col-lg-6 mt-4">
+                    <div class="benefit-cards d-flex align-items-center">
+                        <img class="image" src="/home/define1/Desktop/image.jpg">
+
+                        <h1 class="benifits-header">Health & Family</h1>
+                    </div>
+                    <p class="text-muted paragraph" style="padding-left: 5rem;
+                    padding-top: 1rem;">Provide details about a key benefit, its impact, and the opportunities it
+                        offers.</p>
+                </div>
+                <div class="col-12 col-lg-6 mt-4">
+                    <div class="benefit-cards d-flex align-items-center">
+                        <img class="image" src="/home/define1/Desktop/image.jpg">
+
+                        <h1 class="benifits-header">Community & Caring</h1>
+                    </div>
+                    <p class="text-muted paragraph" style="padding-left: 5rem;
+                    padding-top: 1rem;">Provide details about a key benefit, its impact, and the opportunities it
+                        offers.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="section-4" id="contact-us">
+        <div class="container">
+            <div class="row mt-4">
+                <div class="col-12 col-lg-6 mt-4">
+                    <div class="d-flex align-items-center">
+                        <h1 class="text-center" style="font-weight: 500; font-size: 2.5rem;">You'll Love Our Work Style
+                        </h1>
+                    </div>
+                    <p class="paragraph text-muted mt-4">
+                        Introduce your video and provide a sense of your company's vibe and workflow.<br /><br />
+                        Tell applicants how they'll mesh with your current team - and why they'll love collaborating
+                        with
+                        their future colleagues.
+                    </p>
+                    <button class="button-28" role="button">WATCH THE VIDEO</button>
+                </div>
+                <div class="col-12 col-lg-6 mt-4">
+                    <div class="d-flex align-items-center justify-content-center">
+                        <video src="/home/define1/Downloads/example123.mp4" autoplay loop style="height: 100%;
+                            width: 100%;
+                            margin-top: 3rem;
+                            margin-left: 3rem;
+                        "></video>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="section-5 mt-5 mb-5" id="perks">
+        <div class="container">
+            <h1 class="text-center" style="font-weight: 800; font-size: 3.5rem;">More Sweet Perks</h1>
+            <div class="mt-4">
+                <div class="row ">
+                    <div class="col-12 col-lg-4">
+                        <div class="card d-flex align-items-center justify-content-center" style="border: none;">
+                            <div class="sweet-icons d-flex align-items-center justify-content-center">
+                                <i class="fa fa-cutlery" style="font-size: 3.375rem !important;"></i>
+                            </div>
+                            <h4 class="text-center mt-4" style="font-weight: 800; ">Free Lunch</h4>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="card d-flex align-items-center justify-content-center" style="border: none;">
+                            <div class="sweet-icons d-flex align-items-center justify-content-center">
+                                <i class="fa fa-building" style="font-size: 3.375rem !important;"></i>
+                            </div>
+                            <h4 class="text-center mt-4" style="font-weight: 800; ">Urban Office</h4>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="card d-flex align-items-center justify-content-center" style="border: none;">
+                            <div class="sweet-icons d-flex align-items-center justify-content-center">
+                                <i class="fa fa-laptop " style="font-size: 3.375rem !important;"></i>
+                            </div>
+                            <h4 class="text-center mt-4" style="font-weight: 800; ">Remote Work</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-6 mt-5 me-5" id="values">
+        <div class="container">
+            <div class="card" style="border: none;">
+                <div class="card-header" style="background-color: white !important; border-bottom: none;">
+                    <div class="card-title">
+                        <h1 class="text-center" style="font-weight: 800; font-size: 3.5rem;">Our Core Values</h1>
+                    </div>
+                    <p class="text-muted text-center" style="font-size: 25px;">This headline celebrates the values that
+                        help define your <br />mission,
+                        your brand,
+                        and your success.
+                    </p>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-12 col-lg-4">
+                            <div class="card" style="border: none;">
+                                <h4 style="text-align: center; font-weight: 600;">Core Value #1</h4>
+                                <div class="d-flex align-items-center justify-content-center mt-4">
+                                    <p class="text-muted" style="text-align: center;">Describe a key value that drives
+                                        your relationships
+                                        with employees, suppliers,
+                                        and customers. Show how your everyday business practice reflects that principle.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div class="card" style="border: none;">
+                                <h4 style="text-align: center; font-weight: 600;">Core Value #2</h4>
+                                <div class="d-flex align-items-center justify-content-center mt-4">
+                                    <p class="text-muted" style="text-align: center;">Describe a key value that drives
+                                        your relationships
+                                        with employees, suppliers,
+                                        and customers. Show how your everyday business practice reflects that principle.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div class="card" style="border: none;">
+                                <h4 style="text-align: center; font-weight: 600;">Core Value #3</h4>
+                                <div class="d-flex align-items-center justify-content-center mt-4">
+                                    <p class="text-muted" style="text-align: center;">Describe a key value that drives
+                                        your relationships
+                                        with employees, suppliers,
+                                        and customers. Show how your everyday business practice reflects that principle.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-7 mt-5 me-5" id="staff">
+        <div class="container">
+            <div class="card" style="border: none;">
+                <div class="card-header" style="background-color: white !important; border-bottom: none;">
+                    <h1 class="text-center" style="font-weight: 800; font-size: 3.5rem;">Meet the Team</h1>
+                    <h4 class="text-center text-muted mt-4">The people who make everything happen</h4>
+                </div>
+                <div class="card-body">
+                </div>
+            </div>
+            <div class="testimonial-box me-5" style=" margin-bottom: 5rem !important;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="team-slider owl-carousel">
+                                <div class="single-box text-center">
+                                    <div class="img-area"><img alt="" class="img-fluid move-animation"
+                                            src="https://i.postimg.cc/65VQDfjs/1.png"></div>
+                                    <div class="info-area">
+                                        <h4>Silvia Olson</h4>
+                                        <p>Office Manager</p>
+                                    </div>
+                                </div>
+                                <div class="single-box text-center">
+                                    <div class="img-area"><img alt="" class="img-fluid move-animation"
+                                            src="https://i.postimg.cc/vmCM14qL/2.png"></div>
+                                    <div class="info-area">
+                                        <h4>Roy Mendoza</h4>
+                                        <p>UX/UI Designer</p>
+                                    </div>
+                                </div>
+                                <div class="single-box text-center">
+                                    <div class="img-area"><img alt="" class="img-fluid move-animation"
+                                            src="https://i.postimg.cc/TYTxWM9S/3.png"></div>
+                                    <div class="info-area">
+                                        <h4>Steven Purcell</h4>
+                                        <p>Senior Developer</p>
+                                    </div>
+                                </div>
+                                <div class="single-box text-center">
+                                    <div class="img-area"><img alt="" class="img-fluid move-animation"
+                                            src="https://i.postimg.cc/593GTHB7/4.png"></div>
+                                    <div class="info-area">
+                                        <h4>Alexandra Jones</h4>
+                                        <p>Product Manager</p>
+                                    </div>
+                                </div>
+                                <div class="single-box text-center">
+                                    <div class="img-area"><img alt="" class="img-fluid move-animation"
+                                            src="https://i.postimg.cc/tJCrp53r/5.png"></div>
+                                    <div class="info-area">
+                                        <h4>Robert Johnson</h4>
+                                        <p>CEO</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer mt-4 py-3 bg-light">
+        <div class="container">
+            <div class="d-flex align-items-center justify-content-between">
+                <div class="icons">
+                    <i class="fa fa-twitter fs-22" style="margin-right: 5px"></i>
+                    <i class="fa fa-instagram fs-22" style="margin-right: 5px"></i>
+                    <i class="fa fa-facebook fs-22" style="margin-right: 5px"></i>
+                </div>
+                <div>
+                    <span class="text-center" style="    font-weight: 900; font-size: 20px;">LOGO</span>
+                </div>
+                <div class="">
+                    <span class="text-center text-muted">© 2019 Moqups</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Add this script in your HTML file after including the Owl Carousel library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js">
+    </script>
+    <script>
+        $('.team-slider').owlCarousel({
+            loop: true,
+            nav: false,
+            autoplay: true,
+            autoplayTimeout: 5000,
+            smartSpeed: 450,
+            margin: 20,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                768: {
+                    items: 2
+                },
+                991: {
+                    items: 3
+                },
+                1200: {
+                    items: 3
+                },
+                1920: {
+                    items: 3
+                }
+            }
+        });
+    </script>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/d47e1d2e79.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
